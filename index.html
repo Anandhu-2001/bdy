@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A little journey through our story, made just for you.">
+    <meta name="theme-color" content="#ff4f81">
+
+    <title>Our Story ❤️</title>
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9D%A4%EF%B8%8F%3C/text%3E%3C/svg%3E">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/how-we-met.css">
+    <link rel="stylesheet" href="css/beautiful-moments.css">
+    <link rel="stylesheet" href="css/love-quiz.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/final-birthday.css">
+
+</head>
+
+
+<body>
+
+    <!-- Journey progress -->
+    <div class="story-progress"><div class="story-progress-fill" id="progressFill"></div></div>
+
+    <!-- Floating Hearts -->
+    <div class="hearts"></div>
+
+    <!-- Hero -->
+
+    <section class="hero" id="hero">
+
+        <div class="overlay"></div>
+
+        <div class="content">
+
+            <h1>
+                Every beautiful story has a beginning...
+            </h1>
+
+            <h2>
+                This is ours ❤️
+            </h2>
+
+            <button id="startBtn" class="btn">
+
+                Begin Our Journey
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Background Music -->
+<audio id="bgMusic" loop>
+    <source src="assets/music/love.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Petals Container -->
+<div id="petals"></div>
+
+<!-- ========================================= -->
+<!-- HOW WE MET SECTION -->
+<!-- ========================================= -->
+
+<section id="how-we-met" class="how-we-met">
+
+    <div class="container">
+
+        <div class="title-box reveal-heading">
+
+            <h2>🌸 How We Met 🌸</h2>
+
+            <p>
+                Every love story begins with one beautiful moment.
+            </p>
+
+        </div>
+
+        <div class="meeting-content">
+
+            <!-- Left Side -->
+            <div class="photo-card">
+
+                <img src="assets/images/timeline/firstpic.jpeg"
+                     alt="Our First Meeting">
+
+                <span>Our First Picture ❤️</span>
+
+            </div>
+
+            <!-- Right Side -->
+            <div class="story-card">
+
+                <div class="story-title">
+
+                    ❤️ Our First Meeting
+
+                </div>
+
+                <p class="quote">
+
+                    "I never imagined that one conversation would become one of the most important moments of my life."
+
+                </p>
+
+                <div class="details">
+
+                    <div class="detail">
+
+                        <span>📅</span>
+
+                        <div>
+
+                            <h4>Date</h4>
+
+                            <p>December 2024</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="detail">
+
+                        <span>📍</span>
+
+                        <div>
+
+                            <h4>Place</h4>
+
+                            <p>Lulu Mall</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="detail">
+
+                        <span>😊</span>
+
+                        <div>
+
+                            <h4>First Impression</h4>
+
+                            <p>Your smile made my day.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="detail">
+
+                        <span>💖</span>
+
+                        <div>
+
+                            <h4>What I Felt</h4>
+
+                            <p>I didn't know it then, but meeting you would change my life forever.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button id="nextStory" class="btn">
+
+                    Continue Our Story ❤️
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- BEAUTIFUL MOMENTS -->
+<!-- ========================================= -->
+
+    <!-- Memory 3 -->
+
+    <section id="beautiful-moments" class="beautiful-moments">
+
+        <div class="moments-title reveal-heading">
+
+            <h2>📸 Beautiful Memories</h2>
+    
+            <p>
+                Every picture tells a beautiful story.
+            </p>
+    
+        </div>
+    
+        <div id="memoriesContainer"></div>
+    
+        <div class="continue">
+    
+            <button id="nextReasons" class="btn">
+                Continue Our Story ❤️
+            </button>
+    
+        </div>
+    
+    </section>
+
+    <section id="love-quiz" class="love-quiz">
+
+        <div class="quiz-container">
+    
+            <h2>❤️ How Well Do You Know Us? ❤️</h2>
+    
+            <p class="subtitle">
+                Let's see how well you remember our journey together.
+            </p>
+    
+            <div id="quizBox"></div>
+    
+            <div id="resultBox" style="display:none;">
+    
+                <h2>❤️ Love Meter ❤️</h2>
+    
+                <div class="meter">
+    
+                    <div id="meterFill"></div>
+    
+                </div>
+    
+                <h1 id="meterText">0%</h1>
+    
+                <p id="resultMessage"></p>
+    
+                <button id="continueBtn" class="btn" style="display:none;">
+                    Continue Our Story ❤️
+                </button>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+    <!-- ========================================= -->
+<!-- GROWING THROUGH THE YEARS -->
+<!-- ========================================= -->
+
+<section id="birthdayTimeline" class="birthday-timeline">
+
+    <div class="timeline-title reveal-heading">
+
+        <h2>Growing Through The Years ❤️</h2>
+
+        <p>
+            Every year made you even more beautiful.
+        </p>
+
+    </div>
+
+    <div id="timelineContainer"></div>
+
+</section>
+
+<section id="birthdayFinal" class="birthday-final">
+
+    <div id="fireworks"></div>
+
+    <div class="birthday-overlay"></div>
+
+    <div class="birthday-content">
+
+        <p class="birthday-label fade delay1">Happy Birthday</p>
+
+        <h1 class="birthday-age fade delay2">
+            22<sup>nd</sup>
+        </h1>
+
+        <h2 class="birthday-name fade delay3">
+            Kannama <span class="heart">❤️</span>
+        </h2>
+
+        <div class="photo fade delay4">
+
+            <img src="assets/images/birthday/age22.jpeg" alt="Kannama">
+
+        </div>
+
+        <div class="message fade delay5">
+
+            <p>
+                Every year made you more beautiful,
+                but your heart is what I love the most.
+            </p>
+
+            <p>
+                Thank you for filling my life with happiness,
+                laughter, and countless memories.
+            </p>
+
+            <p>
+                I wish your 22nd year becomes your happiest one yet.
+            </p>
+
+        </div>
+
+        <p id="typing" class="typing-line"></p>
+
+        <div class="signature fade delay6">
+
+            <span class="signature-label">Forever Yours</span>
+
+            <span class="signature-name">Anandhu</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.10.7/dist/index.umd.js"></script>
+<script src="js/final-birthday.js"></script>
+<script src="js/story-controller.js"></script>
+<script src="js/timeline.js"></script>
+    <script src="js/hearts.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/memories.js"></script>
+    <script src="js/love-quiz.js"></script>
+</body>
+
+</html>< ! - -   r e b u i l d   - - >  
+ 

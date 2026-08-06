@@ -1,0 +1,77 @@
+.hearts{
+
+    position:fixed;
+
+    width:100%;
+
+    height:100vh;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+    z-index:2;
+}
+
+.heart{
+
+    position:absolute;
+
+    bottom:-50px;
+
+    color:#ffb6c1;
+
+    animation:float linear forwards;
+
+    filter:drop-shadow(0 0 6px rgba(255,150,180,.5));
+
+}
+
+@keyframes float{
+
+    from{
+
+        transform:translateY(0) scale(1);
+        opacity:.9;
+    }
+
+    to{
+
+        transform:translateY(-120vh) scale(1.5);
+        opacity:0;
+    }
+}
+
+/* #petal animation */
+
+#petals {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 99999;
+}
+
+.petal {
+    position: absolute;
+    top: -60px;
+    opacity: 0;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+
+    0% {
+        transform: translateY(-80px) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(120vh) rotate(720deg);
+        opacity: 0;
+    }
+}

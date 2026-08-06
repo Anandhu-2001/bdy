@@ -1,0 +1,70 @@
+nav{
+
+    position:fixed;
+
+    width:100%;
+
+    padding:25px 80px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    z-index:100;
+}
+
+.logo{
+
+    font-size:28px;
+}
+
+nav ul{
+
+    display:flex;
+    list-style:none;
+    gap:45px;
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    transition:.3s;
+}
+
+nav a:hover{
+
+    color:#ffd8e8;
+}
+
+@media (max-width:768px){
+
+    nav{
+
+        padding:15px 20px;
+        flex-direction:column;
+        gap:15px;
+
+    }
+
+    nav ul{
+
+        gap:18px;
+        flex-wrap:wrap;
+        justify-content:center;
+
+    }
+
+    nav a{
+
+        font-size:15px;
+
+    }
+
+}
